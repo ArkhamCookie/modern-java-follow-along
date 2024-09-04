@@ -207,5 +207,51 @@ public class Main {
 			System.out.println(x);
 			x++;
 		}
+
+		// For
+		System.out.println("--- For ---");
+
+		for (int number = 0; number < 10; number++) {
+			System.out.println(number);
+		}
+
+		// Counting Up and Down
+		System.out.println("--- Counting Up and Down ---");
+
+		int currentNumber;
+
+		for (currentNumber = 1; currentNumber <= 10; currentNumber++) {
+			System.out.println(currentNumber);
+		}
+
+		for (currentNumber = 10; currentNumber >= 1; currentNumber--) {
+			System.out.println(currentNumber);
+		}
+
+		// Iterate over a String
+		System.out.println("--- Iterate over a String ---");
+
+		name = "Lavigne";
+
+		for (index = 0; index < name.length(); index++) {
+			System.out.println(name.charAt(index));
+		}
+
+		// Iterate over an Array
+		System.out.println("--- Iterate over an Array ---");
+
+		int[] numbers = { 4, 1, 6, 9 };
+
+		for (index = 0; index < numbers.length; index++) {
+			System.out.println(numbers[index]);
+		}
+
+		// Empty Initializers
+		System.out.println("--- Empty Initializers ---");
+
+		int number = 0;
+		for (; number < 5; number++) {
+			System.out.println(number);
+		}
 	}
 }
