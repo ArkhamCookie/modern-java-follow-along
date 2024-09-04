@@ -15,10 +15,12 @@ public class Main {
 
 		funToBeAround = false;
 		willAskOnDate = funToBeAround && believesInFundamentalHumanRights; // remember to recall var if conditions change
+
 		System.out.println(willAskOnDate); // prints false
 
 		believesInFundamentalHumanRights = false;
 		willAskOnDate = funToBeAround && believesInFundamentalHumanRights;
+
 		System.out.println(willAskOnDate); // prints false
 
 		/* OR */
@@ -32,6 +34,7 @@ public class Main {
 
 		dogLooksNice = false;
 		willAskToPetDog = dogLooksNice || personLooksNice;
+
 		System.out.println(willAskToPetDog); // prints false
 
 		/* NOT */
@@ -44,6 +47,7 @@ public class Main {
 
 		haveSweetsInHouse = false;
 		healthySnackTime = !haveSweetsInHouse;
+
 		System.out.println(healthySnackTime); // prints true
 		
 		/* Order of Operations */
@@ -58,11 +62,13 @@ public class Main {
 		// second, a && true is true
 		// third true || c is true.
 		boolean result = a && !b || c;
+
 		System.out.println(result); // prints true
 
 		// Even though || has a lower precedence than &&, we evaluate
 		// (!b || c) first because of the parentheses.
 		result = a && (!b || c);
+		
 		System.out.println(result); // prints true
 
 		// Challenge 3
