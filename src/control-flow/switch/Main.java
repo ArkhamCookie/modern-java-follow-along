@@ -64,7 +64,9 @@ public class Main {
 			case "cabbage", "brussel sprouts", "kale", "cauliflower" -> {
 				return "Brassica oleracea";
 			}
-			case null, default -> {
+			// Can do in Java 21+
+			// case null, default -> {
+			default -> {
 				return "unknown";
 			}
 		}
