@@ -4,3 +4,7 @@ I'm following along with [Modern Java](https://together-java.github.io/ModernJav
 ~~GitHub is also a good way to backup projects.~~
 
 If you find this helpful, I recommend following along with the book yourself.
+
+## Java Version
+
+I'm using Java 21 OpenJDK.
