@@ -96,5 +96,43 @@ public class Main {
 
 		char r = assassin.charAt(indexOfR);
 		System.out.println(r);
+
+		// Strings 2
+		System.out.println("--- Strings 2 ---");
+
+		message = "Happy Valentines Day";
+
+		System.out.println(message.toLowerCase());
+		System.out.println(message.toUpperCase());
+
+		String historicalFigureOne = "St. Valentines";
+		String historicalFigureTwo = "st. valentines";
+
+		System.out.println(
+			historicalFigureOne.equalsIgnoreCase(historicalFigureTwo)
+		);
+
+		message = "";
+
+		System.out.println(
+			message.isEmpty()
+		);
+
+		String brainSounds = """
+
+
+
+			""";
+
+		System.out.println(
+			brainSounds.isBlank()
+		);
+
+		message = "   Happy Valentines Day.   ";
+
+		System.out.println(
+			message.strip()
+		);
+
 	}
 }
