@@ -39,6 +39,12 @@ public class Main {
 		GREEN
 	}
 
+	enum Action {
+		GO,
+		SLOW_DOWN,
+		STOP
+	}
+
 	static void checkIfGo(StopLight light) {
 		switch (light) {
 			case GREEN -> {
@@ -72,6 +78,19 @@ public class Main {
 		}
 	}
 
+	static void tellAction(StopLight light) {
+		Action action = switch (light) {
+				case RED -> Action.STOP;
+				case YELLOW -> {
+					System.out.println("Lemon Light!");
+					yield Action.SLOW_DOWN;
+			}
+				case GREEN -> Action.GO;
+		};
+
+		System.out.println(action);
+	}
+
 	public static void main(String[] args) {
 		sayColor("apple");
 
@@ -82,5 +101,7 @@ public class Main {
 		checkIfGo(light);
 
 		System.out.println(combingCases("kale"));
+
+		tellAction(light);
 	}
 }
